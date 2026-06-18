@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback - BGNU Portal</title>
+    <style>
+        body { background-color: gray; color: #ffffff; font-family: sans-serif; padding: 20px; text-align: center; }
+        .card { background-color: #1a1a1a; max-width: 400px; margin: 20px auto; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); text-align: left; }
+        h1 { color: #4ac6ed; text-align: center; }
+        label { display: block; margin-top: 15px; color: #aaa; font-size: 14px; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 5px; background-color: #222; border: 1px solid #444; border-radius: 5px; color: white; box-sizing: border-box; }
+        .submit-btn { background-color: #4caf50; color: white; border: none; padding: 12px; width: 100%; border-radius: 5px; font-weight: bold; margin-top: 15px; cursor: pointer; }
+        .back-btn { display: inline-block; background-color: darksky; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>📝 Teacher Feedback</h1>
+        <p style="color: #aaa; text-align: center;">Submit your course evaluation</p>
+        
+        <form onsubmit="alert('Feedback Submitted Successfully!'); return false;">
+            <label>Select Teacher / Course:</label>
+            <input type="text" value="Object-Oriented Programming (OOP) Instructor" disabled>
+            
+            <label>Your Comments:</label>
+            <textarea rows="4" placeholder="Enter your feedback here..."></textarea>
+            
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+
+        <center><a href="index.html" class="back-btn">Go Back to Dashboard</a></center>
+    </div>
+
+</body>
+</html>

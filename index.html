@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Muhammad Umair Faisal - Ultimate Dashboard</title>
+    <style>
+        /* پوری اسکرین کا بنیادی ڈیزائن */
+        body {
+            background-color: #drakblue;
+            color: drakblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- حصہ 1: پرانا لائٹ موڈ کارڈ --- */
+        .hero-section {
+            background-color:lightblue;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .logo-img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #0056b3;
+            margin-bottom: 15px;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 28px;
+            margin: 10px 0 5px 0;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #666666;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #lightgreen;
+            color:red ;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* --- حصہ 2: نیا ڈارک موڈ یونیورسٹی ڈیش بورڈ --- */
+        .dark-dashboard {
+            background-color: #skyblue;
+            color:white;
+            padding: 30px 20px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .top-header {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .bgnu-logo {
+            font-size: 24px;
+            color: #4ac6ed;
+            font-weight: bold;
+        }
+        .online-status {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #4caf50;
+        }
+        .online-dot {
+            width: 12px;
+            height: 12px;
+            background-color: #4caf50;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+        
+        /* یونیورسٹی ایپ جیسا اسٹوڈنٹ کارڈ */
+        .student-card {
+            background-color: #1a1a1a;
+            width: 100%;
+            max-width: 400px;
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .avatar-small {
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #4ac6ed;
+            margin-right: 15px;
+        }
+        .student-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .student-roll {
+            font-size: 13px;
+            color: #aaaaaa;
+        }
+
+        /* رجسٹریشن پینل */
+        .info-panel {
+            background-color: #1e3a5f;
+            width: 100%;
+            max-width: 400px;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+        }
+        .panel-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .panel-row:last-child { margin-bottom: 0; }
+        .panel-label { color: #cccccc; }
+        .panel-value { font-weight: bold; }
+
+        /* کورسز گریڈ (چار ڈبے) */
+        .grid-container {
+            width: 100%;
+            max-width: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .grid-tile {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .tile-icon {
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        .tile-title {
+            font-size: 13px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- === حصہ 1: پرانا والا کارڈ (اوپر نظر آئے گا) === -->
+    <div class="hero-section">
+        <img src="puma.jpeg" alt="Muhammad Umair Faisal" class="logo-img">
+  <h1>Muhammad Umair Faisal</h1>
+<div class="subtitle">University Student & Web Developer</div>
+
+<div style="margin-bottom: 20px; font-size: 16px; margin-top: 10px;">
+    <a href="tel:+923000000000" style="color: #4ac6ed; text-decoration: none; font-weight: bold; margin-right: 15px;">
+        📞 Call Me
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=923435803243" target="_blank" style="color: #25D366; text-decoration: none; font-weight: bold;">
+    💬 WhatsApp
+</a>
+        
+    </a>
+</div>
+
+<a href="about.html" class="btn">View More Info</a>       More Info</a>
+    </div>
+
+    <!-- === حصہ 2: نیا والا ڈیش بورڈ (اس کے نیچے نظر آئے گا) === -->
+    <div class="dark-dashboard">
+        
+        <!-- ہیڈر -->
+        <div class="top-header">
+            <div class="bgnu-logo">BGNU</div>
+            <div class="online-status">
+                <div class="online-dot"></div>
+                Online
+            </div>
+        </div>
+
+        <!-- یونیورسٹی اسٹوڈنٹ کارڈ -->
+        <div class="student-card">
+            <img src="puma.jpeg" alt="Muhammad Umair Faisal" class="avatar-small">
+            <div>
+                <div class="student-name">MUHAMMAD UMAIR FAISAL</div>
+                <div class="student-roll">BSDSF25E04</div>
+            </div>
+        </div>
+
+        <!-- رجسٹریشن اور فیس پینل -->
+        <div class="info-panel">
+            <div class="panel-row">
+                <span class="panel-label">Registration No:</span>
+                <span class="panel-value">Pending...</span>
+            </div>
+            <div class="panel-row">
+                <span class="panel-label">Fee Status:</span>
+                <span class="panel-value" style="color: #4caf50;">PAID</span>
+            </div>
+        </div>
+
+      
+
+</body>
+</html>
+
+            </div>
+        </div>
+        <!-- اب یہ ڈبے کلک کرنے پر نئے پیجز کھولیں گے -->
+        <div class="grid-container">
+            
+            <!-- 1. کورسز کا ڈبہ (اس پر کلک کرنے سے اب 'about.html' کھل جائے گا) -->
+            <a href="about.html" class="grid-tile" style="text-decoration: none;">
+                <div class="tile-icon">📚</div>
+                <div class="tile-title">Courses</div>
+            </a>
+
+            <!-- 2. گریڈ بک کا ڈبہ (اس کے لیے آپ 'grade.html' نامی نیا پیج بنا سکتے ہیں) -->
+            <a href="grade.html" class="grid-tile" style="text-decoration: none;">
+                <div class="tile-icon">📊</div>
+                <div class="tile-title">Grade Book</div>
+            </a>
+
+            <!-- 3. اٹینڈنس کا ڈبہ (اس کے لیے آپ 'attendance.html' نامی نیا پیج بنا سکتے ہیں) -->
+            <a href="attendance.html" class="grid-tile" style="text-decoration: none;">
+                <div class="tile-icon">📅</div>
+                <div class="tile-title">Attendance</div>
+            </a>
+
+            <!-- 4. فیڈ بیک کا ڈبہ (اس کے لیے آپ 'feedback.html' نامی نیا پیج بنا سکتے ہیں) -->
+            <a href="feedback.html" class="grid-tile" style="text-decoration: none;">
+                <div class="tile-icon">📝</div>
+                <div class="tile-title">Feedback</div>
+            </a>
+<!-- یونیورسٹی ایپ جیسا لاگ آؤٹ بٹن -->
+    <div class="logout-container">
+        <a href="index.html" class="bgnu-logout-btn" onclick="alert('You have logged out successfully!');">
+            Logout
+        </a>
+    </div>
+
+    <style>
+        /* لاگ آؤٹ بٹن کا خوبصورت لال ڈیزائن */
+        .logout-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 25px auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        .bgnu-logout-btn {
+            background-color: #880e0e; /* یونیورسٹی ایپ جیسا گہرا لال رنگ */
+            color: skyblue;
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: block;
+            text-decoration: none;
+        }
+        .bgnu-logout-btn:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+        </div>
+        
